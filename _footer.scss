@@ -1,0 +1,204 @@
+/*_footer.scss*/
+
+footer {
+	padding   : 40px 0;
+	background: $color__green_mid;
+	color     : $color__white;
+
+	.footer-row {
+		h3 {
+			margin        : 0 0 10px;
+			text-align    : center;
+			color         : $color__white;
+			text-transform: uppercase;
+			font-size     : 2.2rem;
+			font-weight   : 400;
+		}
+
+		.left {}
+
+		.right {}
+
+		.block {
+			text-align: center;
+			max-width : 300px;
+			margin    : 0 auto 20px;
+
+			&.address,
+			&.telephone-email {
+				// color      : $color__green_dark;
+				text-align : center;
+				font-size  : 1.4rem;
+				line-height: 2.4rem;
+
+				p {
+					margin: 0;
+				}
+
+				a {
+					color          : $color__white;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&.address {
+				margin-bottom: 20px;
+			}
+
+			&.telephone-email {
+				margin-bottom: 24px;
+			}
+
+			&.form {
+				.gform_wrapper {}
+			}
+
+			@media screen and (min-width: 768px) {
+				float: left;
+
+				&.address,
+				&.telephone-email {
+					text-align: left;
+				}
+
+			}
+
+			@media screen and (min-width: 1024px) {
+				float: left;
+
+				.block {
+					text-align: left;
+				}
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			.left {
+				text-align  : left;
+				width       : 30%;
+				margin-right: 4%;
+				float       : left;
+			}
+
+			.right {
+				text-align: left;
+				width     : 66%;
+				float     : left;
+			}
+
+			.block {
+				max-width: 100% !important;
+				width    : 100%;
+			}
+
+		}
+
+		@media screen and (min-width: 1024px) {
+			.form.block {
+				margin-bottom: 0;
+			}
+
+			h3 {
+				text-align: left;
+			}
+
+			.left {
+				.address {
+					float     : none;
+					width     : 100%;
+					text-align: left;
+				}
+
+				.telephone-email {
+					text-align: left;
+
+					.email {}
+
+					.telephone {}
+				}
+
+			}
+
+			.right {
+				.column-left {
+					width: 49%;
+					float: left;
+
+					.wpcf7-list-item {
+						margin    : 0;
+						text-align: left;
+					}
+				}
+
+				.column-right {
+					width: 49%;
+					float: right;
+
+					textarea.wpcf7-textarea {
+						height: 137px;
+						border: 2px solid $color__white;
+					}
+
+					.form-row.submit {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+#footer-copyright {
+	background: $color__green_dark;
+	color     : $color__white;
+	text-align: center;
+	font-size : 1.2rem;
+	padding   : 22px 0;
+
+	.logo {
+		margin-bottom: 10px;
+
+		img {
+			display  : inline-block;
+			max-width: 120px;
+		}
+	}
+
+	.copyright {
+		line-height: 1.4rem;
+		margin     : 0 auto;
+	}
+
+	a {
+		color          : $color__white;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (min-width: 568px) {
+	/* 568px */
+}
+@media screen and (min-width: 600px) {
+	/* 600px */
+}
+@media screen and (min-width: 768px) {
+	/* 768px */
+}
+@media screen and (min-width: 1024px) {
+	/* 1024px */
+}
+@media screen and (min-width: 1100px) {
+	/* 1100px */
+}
+@media screen and (min-width: 1200px) {
+	/* 1200px */
+}

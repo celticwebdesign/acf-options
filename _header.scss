@@ -1,0 +1,238 @@
+/*_header.scss*/
+
+header {
+	width     : 100% !important;
+	background: $color__white;
+	position  : relative;
+	z-index   : 1;
+
+	#masthead {
+		// background: $color__grey;
+		position: relative;
+
+		.header-desktop {
+			display  : none;
+			// margin   : 16px auto;
+			font-size: 1.6rem;
+
+			.logo-container {
+				margin-top   : 22px;
+				margin-bottom: 26px;
+			}
+
+			.left-container {}
+
+			.right-container {
+				margin-top: 10px;
+			}
+
+			.contacts {
+				float : right;
+				height: 34px;
+
+				a {
+					color          : $color__green_mid;
+					text-decoration: none;
+					padding        : 0 18px;
+					height         : 32px;
+					line-height    : 32px;
+					display        : block;
+
+					&:hover {
+						color: $color__green_dark;
+					}
+				}
+			}
+
+			.social {
+				float  : right;
+				height : 34px;
+				padding: 0 40px 0 20px;
+
+				ul {
+					margin    : 0;
+					padding   : 0;
+					list-style: none;
+
+					li {
+						display    : inline-block;
+						margin-left: 20px;
+
+						a {
+							display    : block;
+							color      : $color__green_mid;
+							width      : 32px;
+							height     : 32px;
+							text-align : center;
+							line-height: 32px;
+							@include transition(200ms);
+							font-size  : 3.2rem;
+
+							&:hover {
+								color: $color__green_dark;
+							}
+
+							.fa {
+								position: relative;
+								top     : 2px;
+							}
+						}
+					}
+				}
+			}
+
+			.site-branding {
+				max-width: 300px;
+				margin   : 0 auto;
+
+				.site-logo {
+					// margin: 0 auto;
+
+					a {
+						display: block;
+
+						img {
+							display: block;
+						}
+					}
+				}
+
+				@media screen and (min-width: 1024px) {
+					text-align: center;
+
+					a {
+						// margin: 10px 0 0;
+					}
+				}
+			}
+
+			#menu-desktop {
+				background: $color__green_dark;
+			}
+		}
+
+		.header-mobile {
+			.top-bar {
+				background : $color__green_mid;
+				text-align : center;
+				padding    : 7px 0 4px;
+				line-height: normal;
+
+				a {
+					color          : $color__white;
+					text-decoration: none;
+				}
+			}
+
+			.logo-menu {
+				.site-branding {
+					.site-logo {
+						margin: 14px 24px;
+
+						@media screen and (min-width: 1024px) {
+							padding      : 0 0 14px;
+							border-bottom: 1px solid #ccc;
+						}
+
+						a {
+							display  : block;
+							max-width: 200px;
+
+							img {
+								display  : block;
+								max-width: 100%;
+							}
+						}
+					}
+
+					nav {
+						.mega-menu-toggle {
+							position  : absolute;
+							right     : 20px;
+							top       : -52px;
+							background: none;
+
+							&.mega-menu-open {
+								top: -52px;
+							}
+
+							.mega-toggle-blocks-right {
+								.mega-toggle-block {
+									line-height: normal;
+									width      : 70px;
+									height     : 25px;
+									margin     : 0;
+
+									&:after {
+										background: url("img/mobile-toggle-70-25-3.png") no-repeat 0 0 transparent;
+										width     : 49px;
+										height    : 18px;
+										margin    : 0 auto;
+										content   : '';
+									}
+
+								}
+							}
+
+							.mega-toggle-label {
+								display: none;
+							}
+						}
+
+						#mega-menu-main-menu {
+							/*margin-top: 16px;*/
+						}
+					}
+				}
+			}
+
+			/*.contacts {
+				text-align: center;
+			}*/
+		}
+
+		@media screen and (min-width: 1024px) {
+			.header-mobile {
+				display: none;
+			}
+
+			.header-desktop {
+				display: block;
+
+				#menu-desktop {
+					// float: right;
+				}
+			}
+
+		}
+	}
+}
+
+#sticky-wrapper.is-sticky {
+	header {
+		z-index: 100 !important;
+
+		@media screen and (max-width: 767px) {
+			box-shadow: rgba(0, 0, 0, 0.5) 0 1px 3px;
+		}
+	}
+}
+
+@media screen and (min-width: 568px) {
+	/* 568px */
+}
+@media screen and (min-width: 600px) {
+	/* 600px */
+}
+@media screen and (min-width: 768px) {
+	/* 768px */
+}
+@media screen and (min-width: 1024px) {
+	/* 1024px */
+}
+@media screen and (min-width: 1100px) {
+	/* 1100px */
+}
+@media screen and (min-width: 1200px) {
+	/* 1200px */
+}
